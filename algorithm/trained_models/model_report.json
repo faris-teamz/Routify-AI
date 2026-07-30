@@ -1,0 +1,111 @@
+{
+  "models": {
+    "xgb_category": {
+      "accuracy": 0.9923720930232558,
+      "f1": 0.9923533300476888
+    },
+    "xgb_intent": {
+      "accuracy": 0.9815813953488373,
+      "f1": 0.9815540373868843
+    },
+    "lr_baseline": {
+      "accuracy": 0.9962790697674418,
+      "f1": 0.9962753276821066
+    },
+    "xgb_priority": {
+      "accuracy": 0.9998139534883721,
+      "f1": 0.999722506897911
+    }
+  },
+  "cross_validation": {
+    "mean_accuracy": 0.9942318726685764,
+    "std": 0.0009917481287879863,
+    "fold_scores": [
+      0.996093023255814,
+      0.9934883720930232,
+      0.9940454037960551,
+      0.993301079270562,
+      0.9942314849274284
+    ]
+  },
+  "misrouting_risk": {
+    "low_confidence_category_pct": 0.48372093023255813,
+    "low_confidence_intent_pct": 0.5395348837209302,
+    "ambiguous_tickets_pct": 0.35348837209302325,
+    "risk_distribution": {
+      "Low": 5338,
+      "High": 21,
+      "Medium": 16
+    }
+  },
+  "feature_info": {
+    "tfidf_features": 5000,
+    "engineered_features": [
+      "text_length",
+      "word_count",
+      "avg_word_length",
+      "urgency_score",
+      "negative_word_count",
+      "positive_word_count",
+      "sentiment_score",
+      "has_question",
+      "exclamation_count"
+    ],
+    "total_features": 5009
+  },
+  "categories": [
+    "ACCOUNT",
+    "CANCEL",
+    "CONTACT",
+    "DELIVERY",
+    "FEEDBACK",
+    "INVOICE",
+    "ORDER",
+    "PAYMENT",
+    "REFUND",
+    "SHIPPING",
+    "SUBSCRIPTION"
+  ],
+  "intents": [
+    "cancel_order",
+    "change_order",
+    "change_shipping_address",
+    "check_cancellation_fee",
+    "check_invoice",
+    "check_payment_methods",
+    "check_refund_policy",
+    "complaint",
+    "contact_customer_service",
+    "contact_human_agent",
+    "create_account",
+    "delete_account",
+    "delivery_options",
+    "delivery_period",
+    "edit_account",
+    "get_invoice",
+    "get_refund",
+    "newsletter_subscription",
+    "payment_issue",
+    "place_order",
+    "recover_password",
+    "registration_problems",
+    "review",
+    "set_up_shipping_address",
+    "switch_account",
+    "track_order",
+    "track_refund"
+  ],
+  "priorities": [
+    "Critical",
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "thresholds": {
+    "category_confidence": 0.5,
+    "intent_confidence": 0.4,
+    "ambiguity_gap": 0.15,
+    "risk_high": 0.6,
+    "risk_medium": 0.35
+  }
+}

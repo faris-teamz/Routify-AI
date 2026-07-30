@@ -1,0 +1,21 @@
+{
+  "text_column": "instruction",
+  "intent_column": "intent",
+  "category_column": "category",
+  "total_rows": 26872,
+  "unique_texts": 24635,
+  "num_categories": 11,
+  "num_intents": 27,
+  "engineered_features": [
+    "text_length",
+    "word_count",
+    "avg_word_length",
+    "urgency_score",
+    "negative_word_count",
+    "positive_word_count",
+    "sentiment_score",
+    "predicted_priority",
+    "has_question",
+    "exclamation_count"
+  ]
+}
