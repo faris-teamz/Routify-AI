@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 
-const API_BASE = 'http://localhost:8000/api'
+const API_BASE = 'https://routify-ai.onrender.com/api'
 
 function Badge({ type, children }) {
   return <span className={`badge badge-${type}`}>{children}</span>

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import '../App.css'
 
-const API_BASE = 'http://localhost:8000/api'
+const API_BASE = 'https://routify-ai.onrender.com/api'
 
 const SIDEBAR_ITEMS = [
   { id: 'new', label: 'New Complaint', icon: '✦', section: 'support' },
